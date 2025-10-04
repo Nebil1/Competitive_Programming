@@ -19,3 +19,4 @@ def isPalindrome2(self, x: int) -> bool:
             newNum = newNum * 10 + x % 10 
             x = x // 10
         return newNum == inputNum
+
