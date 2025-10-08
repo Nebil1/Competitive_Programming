@@ -12,12 +12,19 @@
 #                 return True
 #         return False
 
-# more efficient solutions 
+# more optimal solution
+# if num already in seen return true
+# class Solution:
+#     def containsDuplicate(self, nums: List[int]) -> bool:
+#         seen = set()
+#         for num in nums:
+#             if num in seen:
+#                 return True
+#             seen.add(num)
+#         return 
+        
+# improve runtime
+# If any duplicates existed, the set will be smaller than the original list.
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        seen = set()
-        for num in nums:
-            if num in seen:
-                return True
-            seen.add(num)
-        return False
+        return len(nums) != len(set(nums))
