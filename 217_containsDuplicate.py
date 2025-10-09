@@ -14,6 +14,7 @@
 
 # more optimal solution
 # if num already in seen return true
+
 # class Solution:
 #     def containsDuplicate(self, nums: List[int]) -> bool:
 #         seen = set()
